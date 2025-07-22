@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>اجاره خودرو</title>
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-------- START HEADER -------->
     <header class="header">
-        <h1 class="header__title">اجاره <span>خودرو</span></h1>
+      <h1 class="header__title">اجاره <span>خودرو</span></h1>
 
-        <div class="header__nav-auth ">
-            <nav class="header__nav">
-                <ul>
-                    <li><a href="#home">صفحه اصلی</a></li>
-                    <li><a href="#cars">خودرو</a></li>
-                    <li><a href="#about">درباره ما</a></li>
-                    <li><a href="#comments"> نظرات مشتریان ما</a></li>
-                    <li><a href="#contact">تماس با ما</a></li>
-                </ul>
-            </nav>
-            <div class="header__auth">
-                <button class="btn-secondary">ثبت نام</button>
-                <button class="btn-primary">ورود</button>
-            </div>
-            
+      <div class="header__nav-auth">
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#home">صفحه اصلی</a></li>
+            <li><a href="#cars">خودرو</a></li>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#comments"> نظرات مشتریان ما</a></li>
+            <li><a href="#contact">تماس با ما</a></li>
+          </ul>
+        </nav>
+        <div class="header__auth">
+          <button class="btn-secondary">ثبت نام</button>
+          <button class="btn-primary">ورود</button>
         </div>
-        <div class="header__menu">
-                <i class='bxr  bx-menu-left'  ></i> 
-                <i class='bxr  bx-x'  ></i> 
-            </div>
+      </div>
+      <div class="header__menu">
+        <i class="bxr bx-menu-left"></i>
+        <i class="bxr bx-x"></i>
+      </div>
     </header>
-
+    <!-------- START MAIN -------->
+    <main>
+      <!-- HOME -->
+      <section class="home section-menu" id="home">
+        <div class="home__content">
+          <h1 class="home__title">
+            <span>خودرو مورد نیازتان را،</span>
+            در زمان نیاز اجاره کنید.
+          </h1>
+          <p class="home__desc">
+            سرویس اجاره خودرو ما با تنوع مناسب و قیمت مناسب آماده خدمات رسانی به
+            شماست.خودروهای لوکس،اقتصادی وخانوادگی با شرایط ویژه.
+          </p>
+          <button class="btn-primary">
+            کشف کنید
+            <i class='bxr  bx-arrow-left-stroke'  ></i> 
+          </button>
+          <form action="" class="home__search-car">
+            <div class="text-input">
+                <label for="location">محل تحویل</label>
+                <input type="text" id="location" placeholder="مثلا تهران ، میدان ونک">
+            </div>
+            <div class="text-input">
+                <label for="pickup"> تاریخ تحویل</label>
+                <input type="text" id="pickup" placeholder="تاریخ مورد نظر">
+            </div>
+            <div class="text-input">
+                <label for="return-date">تاریخ بازگشت</label>
+                <input type="text" id="return-date" placeholder="تارخ بازگشت">
+            </div>
+            <button class="btn-primary">
+                جستجو
+                <i class='bxr  bx-search-big'  ></i> 
+            </button>
+          </form>
+        </div>
+        <div class="home__rectangle"></div>
+        <img src="./images/golden-car.png" alt="خودرو" class="home__img">
+      </section>
+    </main>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
