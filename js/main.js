@@ -8,3 +8,25 @@ headerBtn.addEventListener("click", () => {
   showIcon.style.display = isOpen ? "none" : "block";
   hideIcon.style.display = isOpen ? "block" : "none";
 });
+
+const filterBtns = document.querySelectorAll(".cars__list-btn button");
+const carCards = document.querySelectorAll(".cars__card");
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const brand = btn.dataset.brand; 
+    carCards.forEach((card) => {
+      if(card.dataset.brand === brand || brand === "all"){
+        card.style.display = "block";
+      }
+      else{
+        card.style.display = "none";
+      }
+    });
+    filterBtns.forEach((b) =>{
+      b.classList.replace("btn-primary","btn-secondary");
+      console.log(b);
+    });
+    btn.classList.replace("btn-secondary","btn-primary");
+  });
+});

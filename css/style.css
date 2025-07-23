@@ -242,3 +242,72 @@ header{
         margin-top: 1rem;
     }
 }
+
+/* ------ cars ------ */
+
+ .cars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .title-section{
+    font-size: 32px;
+    text-align: center;
+ }
+ .title-section span{
+    color: var(--primary-color);
+ }
+ .cars__list-btn{
+    display: flex;
+    gap: 12px;
+    margin-block: 2rem;
+ }
+ .cars__list-card{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .cars__card{
+    background: linear-gradient(-45deg , var(--secondary-color) , #fff);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1.5 solid #eee;
+ }
+ .cars__card-car-img{
+    height: 150px;
+    object-fit: cover;
+    transition: 300ms ease;
+ }
+ .cars__card-car-img:hover{
+    transform: scale(1.05);
+ }
+ .cars__card-info{
+    display: flex;
+    gap: 1rem;
+    margin-top: 8px;
+}
+.cars__card-info-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+.cars__card-info-item i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+.cars__card-price-rent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+.cars__price{
+    color: var(--primary-color);
+}
+.cars__price span{
+    color: var(--text-color);
+    font-size: 16px;
+}
