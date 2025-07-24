@@ -358,25 +358,27 @@
           <div class="contact__list-info">
             <div class="card-info">
               <div class="card-info-icon">
-                 <i class='bx  bxs-location-alt-2'  ></i> 
+                <i class="bx bxs-location-alt-2"></i>
               </div>
               <div class="card-info-text">
                 <h3>آدرس</h3>
-                <p>تهران،خیابان ولیعصر،نرسیده به میدان ولیعصر،پلاک 1200 ، طبقه 3</p>
+                <p>
+                  تهران،خیابان ولیعصر،نرسیده به میدان ولیعصر،پلاک 1200 ، طبقه 3
+                </p>
               </div>
             </div>
-              <div class="card-info">
+            <div class="card-info">
               <div class="card-info-icon">
-                 <i class='bx  bxs-envelope'  ></i>  
+                <i class="bx bxs-envelope"></i>
               </div>
               <div class="card-info-text">
                 <h3>ایمیل</h3>
                 <p>info@car-rental.ir</p>
               </div>
             </div>
-              <div class="card-info">
+            <div class="card-info">
               <div class="card-info-icon">
-                 <i class='bx  bxs-phone'  ></i>  
+                <i class="bx bxs-phone"></i>
               </div>
               <div class="card-info-text">
                 <h3>تلفن</h3>
@@ -386,7 +388,101 @@
           </div>
         </div>
       </section>
+      <!------ FOOTER ------>
+      <footer class="footer">
+        <div class="footer__content section-menu">
+          <div>
+            <h1>اجاره خودرو</h1>
+            <p>
+              بهترین خدمات اجاره خودرو در ایران با بیش از 15 سال سابقه درخشان و
+              هزاران مشتری راضی.
+            </p>
+          </div>
+          <div class="footer__menu">
+            <span class="footer__menu-title">منو</span>
+            <ul>
+              <li><a href="#home">صفحه اصلی</a></li>
+              <li><a href="#cars">خودرو</a></li>
+              <li><a href="#about">درباره ما</a></li>
+              <li><a href="#comments"> نظرات مشتریان ما</a></li>
+              <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <span class="footer__menu-title">ما را دنبال کنید</span>
+            <ul>
+              <li><a href="#home">اینستاگرام</a></li>
+              <li><a href="#cars">فیس بوک</a></li>
+              <li><a href="#about">یوتیوب</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">
+          اجاره خودرو طراحی شده تو سط | info@car-rental.ir ©
+        </p>
+      </footer>
     </main>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+        delay: 400,
+        distance: "150%",
+        duration: 2000,
+      });
+      ScrollReveal().reveal(".home__title");
+      ScrollReveal().reveal(".home__desc", {
+        delay: 600,
+      });
+      ScrollReveal().reveal(".title-section");
+      ScrollReveal().reveal(".desc-section", {
+        delay: 600,
+      });
+      ScrollReveal().reveal(".home__content .btn-primary", {
+        delay: 800,
+      });
+      ScrollReveal().reveal(".home__search-car", {
+        delay: 1000,
+        origin: "right",
+      });
+      ScrollReveal().reveal(".home__img", {
+        delay: 600,
+        origin: "left",
+        duration: 2500,
+      });
+      ScrollReveal().reveal(".cars__list-btn button", {
+        delay: 600,
+        interval: 300,
+      });
+      ScrollReveal().reveal(".cars__list-card .cars__card", {
+        delay: 1200,
+        interval: 300,
+      });
+      ScrollReveal().reveal(".about__img-car", {
+        delay: 1200,
+        origin: "right",
+        duration: 2500,
+      });
+      ScrollReveal().reveal(".about__list-info .card-info", {
+        delay: 600,
+        interval: 300,
+      });
+      ScrollReveal().reveal(".comments__list-card .comments__card", {
+        delay: 1000,
+        interval: 300,
+      });
+      ScrollReveal().reveal(".contact__form .text-input", {
+        delay: 1000,
+        interval: 300,
+      });
+      ScrollReveal().reveal(".contact__form .btn-primary", {
+        delay: 1200,
+      });
+      ScrollReveal().reveal(".contact__list-info .card-info", {
+        delay: 1000,
+        interval:300
+      });
+    </script>
   </body>
 </html>
