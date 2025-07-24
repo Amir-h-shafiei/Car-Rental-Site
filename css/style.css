@@ -252,7 +252,7 @@ header {
   font-size: 32px;
   text-align: center;
 }
-.desc-section{
+.desc-section {
   text-align: center;
 }
 .title-section span {
@@ -363,39 +363,39 @@ header {
   height: 50px;
   border-radius: 100%;
 }
-.card-info-text{
-    color: #fff;
+.card-info-text {
+  color: #fff;
 }
-.about__list-info .card-info{
-    margin-top: 1rem;
+.about__list-info .card-info {
+  margin-top: 1rem;
 }
 @media (max-width: 1024px) {
-    .about{
-        flex-direction: column;
-    }
-    .about__circle{
-        top: 0;
-        right: -350px;
-    }
+  .about {
+    flex-direction: column;
+  }
+  .about__circle {
+    top: 0;
+    right: -350px;
+  }
 }
 
 /* ------ comments ------ */
 
-.comments__list-card{
+.comments__list-card {
   display: flex;
   margin-top: 4rem;
   gap: 3rem;
   flex-wrap: wrap;
   justify-content: center;
 }
-.comments__card{
+.comments__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   max-width: 300px;
 }
-.comments__card-img{
+.comments__card-img {
   width: 100px;
   height: 100px;
   border: 1px solid var(--primary-color);
@@ -403,27 +403,78 @@ header {
   border-radius: 50%;
   margin-bottom: 8px;
 }
-.comments__card-img img{
+.comments__card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
-.comments__card-name{
+.comments__card-name {
   color: var(--primary-color);
   margin-bottom: 4px;
 }
-.comments__card-rate{
+.comments__card-rate {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
 }
-.comments__card-rate i{
+.comments__card-rate i {
   color: #ffd600;
   font-size: 24px;
 }
-.comments__card-rate span{
+.comments__card-rate span {
   font-weight: 600;
   margin-right: 8px;
   margin-left: 0;
-} 
+}
+
+/* ------ contact ------ */
+
+.contact {
+  background-color: var(--primary-color);
+}
+.contact-title {
+  color: #fff;
+  text-align: right;
+}
+
+.contact-desc {
+  color: #fff;
+  text-align: right;
+}
+.contact__content{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+  gap: 3rem;
+}
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+.contact__form .text-input{
+  width: 100%;
+}
+.contact__form .text-input label{
+  color: #fff;
+}
+.contact__form .text-input input,
+.contact__form .text-input textarea{
+
+  background-color: #f37546;
+  color: #fff;
+  max-width: 100%;
+  border: none;
+  outline: none;
+}
+.contact__form .text-input input::placeholder,
+.contact__form .text-input textarea::placeholder{
+
+  color: #fff;
+}
+.contact__form .btn-primary{
+  background-color: var(--dark-primary-color);
+  margin-top: 8px;
+}
+
